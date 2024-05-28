@@ -1,0 +1,117 @@
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+
+/* Timeline holder */
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+/* Timeline vertical line */
+ul.timeline:before {
+    content: ' ';
+    background: #fff;
+    display: inline-block;
+    position: absolute;
+    left: 16px;
+    width: 4px;
+    height: 100%;
+    z-index: 400;
+    border-radius: 1rem;
+}
+
+li.timeline-item {
+    margin: 20px 0;
+}
+
+/* Timeline item arrow */
+.timeline-arrow {
+    border-top: 0.5rem solid transparent;
+    border-right: 0.5rem solid #fff;
+    border-bottom: 0.5rem solid transparent;
+    display: block;
+    position: absolute;
+    left: 2rem;
+}
+
+/* Timeline item circle marker */
+li.timeline-item::before {
+    content: ' ';
+    background: #ddd;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    left: 11px;
+    width: 14px;
+    height: 14px;
+    z-index: 400;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.imagen-carusel {
+    height: 400px;
+    width: 500px;
+}
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+
+header {
+    background: #F9ECE5;
+    /* Color de fondo más claro */
+    background: -webkit-linear-gradient(to right, #e4e1e0, #aabfcc);
+    /* Gradiente más claro */
+    background: linear-gradient(to right, #bcd3bc, #9abfd6);
+    /* Gradiente más claro */
+    min-height: 25vh;
+}
+
+footer {
+    background: #F9ECE5;
+    /* Color de fondo más claro */
+    background: -webkit-linear-gradient(to right, #e4e1e0, #aabfcc);
+    /* Gradiente más claro */
+    background: linear-gradient(to right, #bcd3bc, #9abfd6);
+    /* Gradiente más claro */
+    min-height: 20vh;
+}
+
+.nav-bar-fondo {
+    background: #F9ECE5;
+    /* Color de fondo más claro */
+    background: -webkit-linear-gradient(to right, #e4e1e0, #aabfcc);
+    /* Gradiente más claro */
+    background: linear-gradient(to right, #bcd3bc, #9abfd6);
+    /* Gradiente más claro */
+    min-height: 10vh;
+
+}
+
+.feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: .75rem;
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.list-icon::before {
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-check2-circle" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/><path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/></svg>');
+    margin-right: 10px;
+    vertical-align: middle;
+}
